@@ -45,3 +45,8 @@ with st.expander('Analizar texto'):
 with open ('Cute Doggie.json') as source:
   animation=json.load(source)
 st.lottie(animation,width =350)
+
+with open ('Cute Doggie.json') as source:
+  animation=json.load(source)
+st.lottie(animation,width =350)
+
