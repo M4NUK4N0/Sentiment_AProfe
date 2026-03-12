@@ -1,4 +1,6 @@
 from textblob import TextBlob
+from streamlit_lottie import st_lottie
+import json
 import pandas as pd
 import streamlit as st
 from PIL import Image
@@ -39,3 +41,7 @@ with st.expander('Analizar texto'):
             st.write( 'Es un sentimiento Negativo 😔')
         else:
             st.write( 'Es un sentimiento Neutral 😐')
+
+with open ('graficos.json') as source:
+  animation=json.load(source)
+st.lottie(animation,width =350)
